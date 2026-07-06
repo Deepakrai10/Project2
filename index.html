@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    header {
+      background-color: black;
+      padding: 15px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      text-transform: capitalize;
+    }
+    .links li {
+      font-size: larger;
+      font-weight: 900;
+      color: white;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px;
+      background-color: lightblue;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+    button {
+      padding: 5px;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+    .hero-img {
+      /* border: 5px solid black; */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      /* margin-top: 10px; */
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 500px 500px 500px;
+      background-color: grey;
+    }
+    .html {
+      margin-left: 40px;
+      margin-top: 80px;
+      height: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bolder;
+      margin-bottom: 80px;
+    }
+    .css {
+      margin-left: 40px;
+      margin-top: 80px;
+      height: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      background-color: skyblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bolder;
+      margin-bottom: 80px;
+    }
+    .js {
+      margin-left: 40px;
+      margin-top: 80px;
+      height: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      background-color: lightgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-weight: bolder;
+      margin-bottom: 80px;
+    }
+    .footer {
+      padding: 30px;
+      background-color: aliceblue;
+      color: black;
+      line-height: 1.8;
+    }
+    .footer h1 {
+      text-transform: capitalize;
+    }
+    .footer p {
+      text-transform: capitalize;
+    }
+
+    /* Tablet */
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 20px;
+      }
+    }
+
+    /* mobile */
+    @media (max-width: 600px) {
+      .links {
+        display: flex;
+        flex-direction: column;
+      }
+      .hero img {
+        margin-top: 20px;
+      }
+
+      .nav h2 {
+        margin-left: 30px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2>Responsive Site</h2>
+        <ul class="links">
+          <li>home</li>
+          <li>services</li>
+          <li>address</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>responsive web design</h1>
+        <p>
+          build web pages using html , css which looks good on laptop , tablet ,
+          smart phone
+        </p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="hero-img">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbJTbIgDVd3e_QKwsk571rIs4CZ3RkXTEubaYLo1azgQ&s=10"
+          alt="web page"
+        />
+      </div>
+      <div></div>
+    </section>
+    <section class="features">
+      <div class="html">HTML</div>
+      <div class="css">CSS</div>
+      <div class="js">JAVA SCRIPT</div>
+    </section>
+
+    <footer class="footer">
+      <h1>frontend development project</h1>
+      <p>this project is created by <strong>Deepak Rai</strong></p>
+      <p>email id - raisangeeta575@gmail.com</p>
+      <p>contact- 868*****16</p>
+      <p>&copy; 2026 ALL RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+</html>
